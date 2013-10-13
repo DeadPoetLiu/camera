@@ -40,13 +40,41 @@
 #include <cmath>
 
 #include<osgDB/ReadFile>
+#include <osgDB/WriteFile>
 #include<fstream>
 #include<stdio.h>
 #include<iostream>
+#include <sstream>
+using namespace std;
+osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp,const std::string& img,const osg::Matrixd & transform );
+int findLast(const std::string & path){
+	 int last=-1;
+	for(int i=path.size()-1;i>=0;i--){
+		if(path[i]=='.'){
+			last=i;
+			break;
+		}
+	}
+	return last;
+}
 
+std::string  get(const std::string & path, int last,int num){
+	std::string img=path;
+   
 
-void readFrame(std::istream &in,osg::Group * group,osg::Node * node){
+	std::stringstream ss;
+	ss<<num;
+	std::string ns=ss.str();
+	for(int i=ns.size()-1;i>=0;i--)
+		img[--last]=ns[i];
+//	cout<<path<<endl;
+	return img;
+}
+
+void readFrame(std::istream &in,osg::Group * group,const string & img){
 	std::string s;
+	//char  t[]="<Image Sequence>";
+	
 	while(in>>s&&s.substr(0,6)!=("<FRAME"));
 	osg::Matrixd m;
 	double f;
@@ -59,82 +87,56 @@ void readFrame(std::istream &in,osg::Group * group,osg::Node * node){
 	
 	while(in>>s&&s.substr(0,6)!=("<FRAME"));
 	
-		osg::MatrixTransform * matrix=new osg::MatrixTransform;
+		//osg::MatrixTransform * matrix=new osg::MatrixTransform;
 		
-		matrix->setMatrix(m.inverse(m));
-		matrix->addChild(node);
-		group->addChild(matrix);
+		//matrix->setMatrix(m.inverse(m));
+		//matrix->addChild(node);
+		//group->addChild(matrix);
 	//std::cout<<m<<std::endl;
+	group->addChild(getRec(1,1,1,img,m));
+
+
+
+
 }
-void read(std::istream & in,osg::Group * group,osg::Node * node)
+void read(std::istream & in,osg::Group * group)
 {
 	std::string s;
-	while(std::getline(in,s)&&s!=std::string("<Camera Track>"));
-	while(in)
-		 readFrame(in,group,node);
-
-}
-
-void read_act(const char * path,osg::Group * group,osg::Node * node)
-{
-
-	FILE* file=fopen(path,"rt");
-	if(file==NULL)
-	{
-		fprintf(stderr,"Open File: %s Error!",path);
-		exit(1);
-	}
-	const int MAXN = 100;
-	int start,step,end,num_frames=0;
-	std::string imagePath;
-	char *str=new char[MAXN+1];
-
-	while(fgets(str,MAXN,file)&&strcmp(str,"<Image Sequence>\n"));
-	fgets(str,MAXN,file);//
-	imagePath=str;
-	fscanf(file,"start:%d\n",&start);
-	fscanf(file,"step:%d\n",&step);
-	fscanf(file,"end:%d\n",&end);
+	while(std::getline(in,s)&&s!=std::string("<Image Sequence>"));
+	std::string imgPath,temp;
 	
-	while(fgets(str,MAXN,file)&&strcmp(str,"<intrinsic parameter>\n"));
-	double fx,fy,skew,x0,y0,aspect_ratio;
-	fscanf(file,"%lf %lf %lf %lf %lf %lf\n",&fx,&fy,&x0,&y0,&skew,&aspect_ratio);
+	int start,step,end;
+	std::getline(in,imgPath);
+	imgPath=imgPath.substr(9,imgPath.size());
+	
+	std::getline(in,s);
+	temp=s.substr(6,s.size());
+	start= std::stoi(temp);
+	//cout<<start<<endl;
+	std::getline(in,s);
+	temp=s.substr(5,s.size());
+	step= std::stoi(temp);
+//	cout<<step<<endl;
+	std::getline(in,s);
+	temp=s.substr(4,s.size());
+	end= std::stoi(temp);
+//	cout<<end<<endl;
+	int last=findLast(imgPath);
+	while(std::getline(in,s)&&s!=std::string("<Camera Track>"));
 
-	while(fgets(str,MAXN,file)&&strcmp(str,"<Camera Track>\n"));
+	int seq=start;
 
-	std::cout<<std::string(str);
-	int num=0;
-	/*while(fgets(str,MAXN,file)){
+	while(in){
+		 temp=get(imgPath,last,seq);
+//		 cout<<temp<<endl;
+		 readFrame(in,group,get(imgPath,last,seq));
 		
-		std::cout<<num++<<std::string(str);
-	}*/
-	for(int i=start;i<=end;i+=step){
-		fgets(str,MAXN,file);
-		std::cout<<std::string(str);
-		fgets(str,MAXN,file);
-		//std::cout<<str;
-		double d[4][4];
-		for(int i=0;i<4;i++){
-			for(int j=0;j<4;j++){
-				fscanf(file,"%d",&d[i][j]);
-				std::cout<<d[i][j]<<" ";
-			}
-			//std::cout<<std::endl;
-		}
-	//	if(num%10==0){
-	//	osg::MatrixTransform * matrix=new osg::MatrixTransform;
-	//	matrix->setMatrix(d);
-	//	matrix->addChild(node);
-	//	group->addChild(matrix);
-	////	std::cout<<d;
-	//	}
-	//	num++;
-		fgets(str,MAXN,file);
-		fgets(str,MAXN,file);
-	//	std::cout<<str;
+		 seq+=step;
 	}
 
 }
+
+
 
 
 
@@ -181,28 +183,36 @@ osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp){
 
 }
 
-osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp,const std::string& img ){
+osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp,const std::string& img,const osg::Matrixd & transform ){
 	osg::Vec3Array* rec=new osg::Vec3Array,*tri;
-	rec->push_back(osg::Vec3(-xp,-yp,f));
-	rec->push_back(osg::Vec3(-xp,yp,f));
-	rec->push_back(osg::Vec3(xp,yp,f));
-	rec->push_back(osg::Vec3(xp,-yp,f));
-	rec->push_back(osg::Vec3(-xp,-yp,f));
+	rec->push_back(osg::Vec3(-xp,-yp,f)*transform);
+	rec->push_back(osg::Vec3(-xp,yp,f)*transform);
+	rec->push_back(osg::Vec3(xp,yp,f)*transform);
+	rec->push_back(osg::Vec3(xp,-yp,f)*transform);
+	rec->push_back(osg::Vec3(-xp,-yp,f)*transform);
 	osg::Geometry *g=new osg::Geometry;
 	g->setVertexArray(rec);
 	g->addPrimitiveSet(new osg::DrawArrays(GL_QUADS,0,4));
-
+	osg::ref_ptr<osg::Vec3Array> normals = new osg::Vec3Array;
+     normals->push_back( osg::Vec3(0.0f,0.0f, -1.0f)*transform );
+	 g->setNormalArray( normals.get() );
+     g->setNormalBinding( osg::Geometry::BIND_OVERALL );
 	osg::Geometry * tr[4];
+	
 	osg::Geode *node=new osg::Geode;
 	node->addDrawable(g);
+	osg::PolygonMode *pm = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
 	for(int i=0;i<4;i++){
 		tr[i]=new osg::Geometry;
 		tri=new osg::Vec3Array;
-		tri->push_back(osg::Vec3(0,0,0));
+		tri->push_back(osg::Vec3(0,0,0)*transform);
 		tri->push_back(rec->operator[](i));
 		tri->push_back(rec->operator[](i+1));
 		tr[i]->setVertexArray(tri);
 		tr[i]->addPrimitiveSet(new osg::DrawArrays(GL_TRIANGLES,0,4));
+		auto stateset=tr[i]->getOrCreateStateSet();
+		
+	   stateset->setAttributeAndModes( pm, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
 		node->addDrawable(tr[i]);
 	}
 
@@ -224,12 +234,12 @@ node->getOrCreateStateSet()->setTextureAttributeAndModes(
 
 }
 void main(){
-	std::ifstream in("C:\\Users\\w\\Documents\\indoor.act");
+	/*std::ifstream in("C:\\Users\\w\\Documents\\indoor.act");
 	
 	osg::Group *root=new osg::Group;
 	double scale=1;
 	auto camera=getRec(4,2,1,"C:\\Users\\w\\Pictures\\a.PNG");
-	root->addChild(camera.get());
+	root->addChild(camera.get());*/
 	//read(in,root,camera);
 	
 //	osg::MatrixTransform *tr=new osg::MatrixTransform;
@@ -237,14 +247,17 @@ void main(){
 	
 	 
 //	root->addChild(tr);
-
+	osg::Group *root=new osg::Group;
+	std::ifstream in("C:\\Users\\w\\Documents\\indoor.act");
+	read(in,root);
 	osgViewer::Viewer viewer;
 	
 	viewer.setSceneData(root);
-	std::cout<<root->getNumChildren();
-	auto stateset=root->getOrCreateStateSet();
-	osg::PolygonMode *pm = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
+//	std::cout<<root->getNumChildren();
+//	auto stateset=root->getOrCreateStateSet();
+	//osg::PolygonMode *pm = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
 //	stateset->setAttributeAndModes( pm, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
+//	osgDB::writeNodeFile(*root,"H:\\osgview\\OpenSceneGraph-Data-3.0.0\\camera.osg");
 	viewer.run();
 //	system("pause");
 

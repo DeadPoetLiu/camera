@@ -1,0 +1,3832 @@
+Group {
+  UniqueID Group_0
+  nodeMask 0xffffffff
+  cullingActive TRUE
+  StateSet {
+    rendering_hint DEFAULT_BIN
+    renderBinMode INHERIT
+  }
+  num_children 26
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0000.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -1 -1 1
+        -1 1 1
+        1 1 1
+        1 -1 1
+        -1 -1 1
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        0 0 -1
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_1
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        0 0 0
+        -1 -1 1
+        -1 1 1
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_1
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        0 0 0
+        -1 1 1
+        1 1 1
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_1
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        0 0 0
+        1 1 1
+        1 -1 1
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_1
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        0 0 0
+        1 -1 1
+        -1 -1 1
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0004.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -1.71817 -1.08541 1.13882
+        -1.74265 0.914411 1.12794
+        0.255111 0.938359 1.03632
+        0.279583 -1.06146 1.0472
+        -1.71817 -1.08541 1.13882
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -0.82301 -0.0855181 -0.910299
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_2
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -0.777271 -0.0795217 0.0886361
+        -1.71817 -1.08541 1.13882
+        -1.74265 0.914411 1.12794
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_2
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -0.777271 -0.0795217 0.0886361
+        -1.74265 0.914411 1.12794
+        0.255111 0.938359 1.03632
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_2
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -0.777271 -0.0795217 0.0886361
+        0.255111 0.938359 1.03632
+        0.279583 -1.06146 1.0472
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_2
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -0.777271 -0.0795217 0.0886361
+        0.279583 -1.06146 1.0472
+        -1.71817 -1.08541 1.13882
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0008.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -3.03474 -1.29739 0.298413
+        -3.0782 0.702117 0.290117
+        -1.08239 0.744987 0.167896
+        -1.03894 -1.25452 0.176192
+        -3.03474 -1.29739 0.298413
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -2.18058 -0.287137 -1.76309
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_3
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -2.11957 -0.28167 -0.764968
+        -3.03474 -1.29739 0.298413
+        -3.0782 0.702117 0.290117
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_3
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -2.11957 -0.28167 -0.764968
+        -3.0782 0.702117 0.290117
+        -1.08239 0.744987 0.167896
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_3
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -2.11957 -0.28167 -0.764968
+        -1.08239 0.744987 0.167896
+        -1.03894 -1.25452 0.176192
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_3
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -2.11957 -0.28167 -0.764968
+        -1.03894 -1.25452 0.176192
+        -3.03474 -1.29739 0.298413
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0012.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -5.46406 -1.46617 -0.684336
+        -5.52157 0.532984 -0.693939
+        -3.5273 0.58968 -0.834268
+        -3.46979 -1.40947 -0.824664
+        -5.46406 -1.46617 -0.684336
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -4.63567 -0.451854 -2.75435
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_4
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -4.56568 -0.445048 -1.75683
+        -5.46406 -1.46617 -0.684336
+        -5.52157 0.532984 -0.693939
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_4
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -4.56568 -0.445048 -1.75683
+        -5.52157 0.532984 -0.693939
+        -3.5273 0.58968 -0.834268
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_4
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -4.56568 -0.445048 -1.75683
+        -3.5273 0.58968 -0.834268
+        -3.46979 -1.40947 -0.824664
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_4
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -4.56568 -0.445048 -1.75683
+        -3.46979 -1.40947 -0.824664
+        -5.46406 -1.46617 -0.684336
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0016.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -8.90396 -1.51995 -2.26932
+        -8.9126 0.480035 -2.27083
+        -6.91953 0.488525 -2.43691
+        -6.91088 -1.51146 -2.4354
+        -8.90396 -1.51995 -2.26932
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -8.07781 -0.517935 -4.34621
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_5
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -7.99478 -0.516823 -3.34966
+        -8.90396 -1.51995 -2.26932
+        -8.9126 0.480035 -2.27083
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_5
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -7.99478 -0.516823 -3.34966
+        -8.9126 0.480035 -2.27083
+        -6.91953 0.488525 -2.43691
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_5
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -7.99478 -0.516823 -3.34966
+        -6.91953 0.488525 -2.43691
+        -6.91088 -1.51146 -2.4354
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_5
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -7.99478 -0.516823 -3.34966
+        -6.91088 -1.51146 -2.4354
+        -8.90396 -1.51995 -2.26932
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0020.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -12.5216 -1.34602 -3.20469
+        -12.4823 0.653446 -3.18057
+        -10.4936 0.616886 -3.38963
+        -10.5329 -1.38258 -3.41374
+        -12.5216 -1.34602 -3.20469
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -11.7161 -0.33648 -5.28606
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_6
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -11.6119 -0.350524 -4.29161
+        -12.5216 -1.34602 -3.20469
+        -12.4823 0.653446 -3.18057
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_6
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -11.6119 -0.350524 -4.29161
+        -12.4823 0.653446 -3.18057
+        -10.4936 0.616886 -3.38963
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_6
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -11.6119 -0.350524 -4.29161
+        -10.4936 0.616886 -3.38963
+        -10.5329 -1.38258 -3.41374
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_6
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -11.6119 -0.350524 -4.29161
+        -10.5329 -1.38258 -3.41374
+        -12.5216 -1.34602 -3.20469
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0024.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -14.0682 -1.56478 -4.32663
+        -14.0364 0.434738 -4.29657
+        -12.0541 0.407213 -4.56086
+        -12.0859 -1.59231 -4.59092
+        -14.0682 -1.56478 -4.32663
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -13.325 -0.544795 -6.42598
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_7
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -13.1931 -0.56179 -5.43486
+        -14.0682 -1.56478 -4.32663
+        -14.0364 0.434738 -4.29657
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_7
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -13.1931 -0.56179 -5.43486
+        -14.0364 0.434738 -4.29657
+        -12.0541 0.407213 -4.56086
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_7
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -13.1931 -0.56179 -5.43486
+        -12.0541 0.407213 -4.56086
+        -12.0859 -1.59231 -4.59092
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_7
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -13.1931 -0.56179 -5.43486
+        -12.0859 -1.59231 -4.59092
+        -14.0682 -1.56478 -4.32663
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0028.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -15.9445 -2.20463 -6.78675
+        -15.9196 -0.204871 -6.76814
+        -13.9406 -0.226851 -7.05648
+        -13.9655 -2.22661 -7.07509
+        -15.9445 -2.20463 -6.78675
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -15.2307 -1.19373 -8.90063
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_8
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -15.0866 -1.20474 -7.91112
+        -15.9445 -2.20463 -6.78675
+        -15.9196 -0.204871 -6.76814
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_8
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -15.0866 -1.20474 -7.91112
+        -15.9196 -0.204871 -6.76814
+        -13.9406 -0.226851 -7.05648
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_8
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -15.0866 -1.20474 -7.91112
+        -13.9406 -0.226851 -7.05648
+        -13.9655 -2.22661 -7.07509
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_8
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -15.0866 -1.20474 -7.91112
+        -13.9655 -2.22661 -7.07509
+        -15.9445 -2.20463 -6.78675
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0032.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -19.3532 -3.41726 -9.64188
+        -19.3041 -1.41787 -9.6467
+        -17.3425 -1.46693 -10.0338
+        -17.3916 -3.46632 -10.029
+        -19.3532 -3.41726 -9.64188
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -18.7349 -2.43732 -11.8
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_9
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.5414 -2.43971 -10.8189
+        -19.3532 -3.41726 -9.64188
+        -19.3041 -1.41787 -9.6467
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_9
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.5414 -2.43971 -10.8189
+        -19.3041 -1.41787 -9.6467
+        -17.3425 -1.46693 -10.0338
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_9
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.5414 -2.43971 -10.8189
+        -17.3425 -1.46693 -10.0338
+        -17.3916 -3.46632 -10.029
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_9
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.5414 -2.43971 -10.8189
+        -17.3916 -3.46632 -10.029
+        -19.3532 -3.41726 -9.64188
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0036.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -19.6578 -3.42455 -9.26874
+        -19.611 -1.4251 -9.26835
+        -17.6616 -1.47066 -9.71272
+        -17.7084 -3.47011 -9.71312
+        -19.6578 -3.42455 -9.26874
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -19.1039 -2.43682 -11.4407
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_10
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.8818 -2.44221 -10.4657
+        -19.6578 -3.42455 -9.26874
+        -19.611 -1.4251 -9.26835
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_10
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.8818 -2.44221 -10.4657
+        -19.611 -1.4251 -9.26835
+        -17.6616 -1.47066 -9.71272
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_10
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.8818 -2.44221 -10.4657
+        -17.6616 -1.47066 -9.71272
+        -17.7084 -3.47011 -9.71312
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_10
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -18.8818 -2.44221 -10.4657
+        -17.7084 -3.47011 -9.71312
+        -19.6578 -3.42455 -9.26874
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0040.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -19.9494 -3.62753 -9.00374
+        -19.9216 -1.62773 -9.00206
+        -17.978 -1.6544 -9.47288
+        -18.0058 -3.6542 -9.47456
+        -19.9494 -3.62753 -9.00374
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -19.4344 -2.63278 -11.1821
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_11
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.1991 -2.63687 -10.2102
+        -19.9494 -3.62753 -9.00374
+        -19.9216 -1.62773 -9.00206
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_11
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.1991 -2.63687 -10.2102
+        -19.9216 -1.62773 -9.00206
+        -17.978 -1.6544 -9.47288
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_11
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.1991 -2.63687 -10.2102
+        -17.978 -1.6544 -9.47288
+        -18.0058 -3.6542 -9.47456
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_11
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.1991 -2.63687 -10.2102
+        -18.0058 -3.6542 -9.47456
+        -19.9494 -3.62753 -9.00374
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0044.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -20.3338 -2.89409 -9.12072
+        -20.2416 -0.896368 -9.09624
+        -18.3026 -0.980005 -9.57955
+        -18.3949 -2.97772 -9.60403
+        -20.3338 -2.89409 -9.12072
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -19.8 -1.89102 -11.2907
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_12
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.5591 -1.91403 -10.3204
+        -20.3338 -2.89409 -9.12072
+        -20.2416 -0.896368 -9.09624
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_12
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.5591 -1.91403 -10.3204
+        -20.2416 -0.896368 -9.09624
+        -18.3026 -0.980005 -9.57955
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_12
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.5591 -1.91403 -10.3204
+        -18.3026 -0.980005 -9.57955
+        -18.3949 -2.97772 -9.60403
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_12
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -19.5591 -1.91403 -10.3204
+        -18.3949 -2.97772 -9.60403
+        -20.3338 -2.89409 -9.12072
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0048.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -20.8075 -2.61032 -8.59946
+        -20.6968 -0.613893 -8.55477
+        -18.7753 -0.70827 -9.1016
+        -18.8861 -2.7047 -9.14628
+        -20.8075 -2.61032 -8.59946
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -20.3352 -1.58608 -10.7738
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_13
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.0633 -1.62269 -9.81217
+        -20.8075 -2.61032 -8.59946
+        -20.6968 -0.613893 -8.55477
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_13
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.0633 -1.62269 -9.81217
+        -20.6968 -0.613893 -8.55477
+        -18.7753 -0.70827 -9.1016
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_13
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.0633 -1.62269 -9.81217
+        -18.7753 -0.70827 -9.1016
+        -18.8861 -2.7047 -9.14628
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_13
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.0633 -1.62269 -9.81217
+        -18.8861 -2.7047 -9.14628
+        -20.8075 -2.61032 -8.59946
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0052.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -21.2517 -2.96539 -7.65934
+        -21.1687 -0.967368 -7.62763
+        -19.27 -1.03632 -8.252
+        -19.3529 -3.03434 -8.2837
+        -21.2517 -2.96539 -7.65934
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -20.8835 -1.94485 -9.85545
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_14
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.5722 -1.97285 -8.90556
+        -21.2517 -2.96539 -7.65934
+        -21.1687 -0.967368 -7.62763
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_14
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.5722 -1.97285 -8.90556
+        -21.1687 -0.967368 -7.62763
+        -19.27 -1.03632 -8.252
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_14
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.5722 -1.97285 -8.90556
+        -19.27 -1.03632 -8.252
+        -19.3529 -3.03434 -8.2837
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_14
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -20.5722 -1.97285 -8.90556
+        -19.3529 -3.03434 -8.2837
+        -21.2517 -2.96539 -7.65934
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0056.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -21.7446 -3.14411 -6.46288
+        -21.6749 -1.14547 -6.43894
+        -19.807 -1.20209 -7.15156
+        -19.8767 -3.20073 -7.17549
+        -21.7446 -3.14411 -6.46288
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -21.4872 -2.1259 -8.6758
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_15
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.1315 -2.1495 -7.74151
+        -21.7446 -3.14411 -6.46288
+        -21.6749 -1.14547 -6.43894
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_15
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.1315 -2.1495 -7.74151
+        -21.6749 -1.14547 -6.43894
+        -19.807 -1.20209 -7.15156
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_15
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.1315 -2.1495 -7.74151
+        -19.807 -1.20209 -7.15156
+        -19.8767 -3.20073 -7.17549
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_15
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.1315 -2.1495 -7.74151
+        -19.8767 -3.20073 -7.17549
+        -21.7446 -3.14411 -6.46288
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0060.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -22.24 -3.45428 -5.39236
+        -22.185 -1.45505 -5.38535
+        -20.3553 -1.50263 -6.19163
+        -20.4104 -3.50186 -6.19864
+        -22.24 -3.45428 -5.39236
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -22.1035 -2.44984 -7.62226
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_16
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.7006 -2.46415 -6.70713
+        -22.24 -3.45428 -5.39236
+        -22.185 -1.45505 -5.38535
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_16
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.7006 -2.46415 -6.70713
+        -22.185 -1.45505 -5.38535
+        -20.3553 -1.50263 -6.19163
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_16
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.7006 -2.46415 -6.70713
+        -20.3553 -1.50263 -6.19163
+        -20.4104 -3.50186 -6.19864
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_16
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.7006 -2.46415 -6.70713
+        -20.4104 -3.50186 -6.19864
+        -22.24 -3.45428 -5.39236
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0064.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -22.4181 -3.71623 -5.20989
+        -22.3869 -1.71653 -5.19613
+        -20.5606 -1.73944 -6.01125
+        -20.5919 -3.73915 -6.02501
+        -22.4181 -3.71623 -5.20989
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -22.3042 -2.70254 -7.43687
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_17
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.8968 -2.71519 -6.52372
+        -22.4181 -3.71623 -5.20989
+        -22.3869 -1.71653 -5.19613
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_17
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.8968 -2.71519 -6.52372
+        -22.3869 -1.71653 -5.19613
+        -20.5606 -1.73944 -6.01125
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_17
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.8968 -2.71519 -6.52372
+        -20.5606 -1.73944 -6.01125
+        -20.5919 -3.73915 -6.02501
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_17
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -21.8968 -2.71519 -6.52372
+        -20.5919 -3.73915 -6.02501
+        -22.4181 -3.71623 -5.20989
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0068.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -22.7049 -3.32166 -5.65325
+        -22.6397 -1.32291 -5.62601
+        -20.8039 -1.372 -6.418
+        -20.8691 -3.37075 -6.44524
+        -22.7049 -3.32166 -5.65325
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -22.5452 -2.296 -7.87193
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_18
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.1498 -2.32142 -6.95378
+        -22.7049 -3.32166 -5.65325
+        -22.6397 -1.32291 -5.62601
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_18
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.1498 -2.32142 -6.95378
+        -22.6397 -1.32291 -5.62601
+        -20.8039 -1.372 -6.418
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_18
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.1498 -2.32142 -6.95378
+        -20.8039 -1.372 -6.418
+        -20.8691 -3.37075 -6.44524
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_18
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.1498 -2.32142 -6.95378
+        -20.8691 -3.37075 -6.44524
+        -22.7049 -3.32166 -5.65325
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0072.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -23.1265 -2.8194 -5.54139
+        -23.0175 -0.823195 -5.48401
+        -21.1917 -0.899562 -6.29685
+        -21.3007 -2.89576 -6.35423
+        -23.1265 -2.8194 -5.54139
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -22.9682 -1.76278 -7.74559
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_19
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.5637 -1.81113 -6.83236
+        -23.1265 -2.8194 -5.54139
+        -23.0175 -0.823195 -5.48401
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_19
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.5637 -1.81113 -6.83236
+        -23.0175 -0.823195 -5.48401
+        -21.1917 -0.899562 -6.29685
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_19
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.5637 -1.81113 -6.83236
+        -21.1917 -0.899562 -6.29685
+        -21.3007 -2.89576 -6.35423
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_19
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.5637 -1.81113 -6.83236
+        -21.3007 -2.89576 -6.35423
+        -23.1265 -2.8194 -5.54139
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0076.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -23.4714 -3.04081 -4.69021
+        -23.3768 -1.04357 -4.64454
+        -21.5707 -1.10955 -5.50106
+        -21.6653 -3.10679 -5.54674
+        -23.4714 -3.04081 -4.69021
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -23.3749 -1.99341 -6.90237
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_20
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.948 -2.03429 -5.999
+        -23.4714 -3.04081 -4.69021
+        -23.3768 -1.04357 -4.64454
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_20
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.948 -2.03429 -5.999
+        -23.3768 -1.04357 -4.64454
+        -21.5707 -1.10955 -5.50106
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_20
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.948 -2.03429 -5.999
+        -21.5707 -1.10955 -5.50106
+        -21.6653 -3.10679 -5.54674
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_20
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -22.948 -2.03429 -5.999
+        -21.6653 -3.10679 -5.54674
+        -23.4714 -3.04081 -4.69021
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0080.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -24.1491 -3.04441 -3.48513
+        -24.046 -1.04729 -3.45499
+        -22.2903 -1.12348 -4.40981
+        -22.3934 -3.1206 -4.43995
+        -24.1491 -3.04441 -3.48513
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -24.172 -2.00829 -5.70457
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_21
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -23.6958 -2.04612 -4.82602
+        -24.1491 -3.04441 -3.48513
+        -24.046 -1.04729 -3.45499
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_21
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -23.6958 -2.04612 -4.82602
+        -24.046 -1.04729 -3.45499
+        -22.2903 -1.12348 -4.40981
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_21
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -23.6958 -2.04612 -4.82602
+        -22.2903 -1.12348 -4.40981
+        -22.3934 -3.1206 -4.43995
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_21
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -23.6958 -2.04612 -4.82602
+        -22.3934 -3.1206 -4.43995
+        -24.1491 -3.04441 -3.48513
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0084.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -24.6499 -3.30086 -3.22807
+        -24.5595 -1.30299 -3.20931
+        -22.8467 -1.3708 -4.23965
+        -22.9371 -3.36867 -4.25841
+        -24.6499 -3.30086 -3.22807
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -24.7769 -2.27319 -5.44793
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_22
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.2626 -2.30451 -4.5909
+        -24.6499 -3.30086 -3.22807
+        -24.5595 -1.30299 -3.20931
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_22
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.2626 -2.30451 -4.5909
+        -24.5595 -1.30299 -3.20931
+        -22.8467 -1.3708 -4.23965
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_22
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.2626 -2.30451 -4.5909
+        -22.8467 -1.3708 -4.23965
+        -22.9371 -3.36867 -4.25841
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_22
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.2626 -2.30451 -4.5909
+        -22.9371 -3.36867 -4.25841
+        -24.6499 -3.30086 -3.22807
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0088.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -24.892 -3.28872 -3.01833
+        -24.7985 -1.29091 -3.01083
+        -23.0973 -1.36653 -4.05965
+        -23.1907 -3.36433 -4.06715
+        -24.892 -3.28872 -3.01833
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -25.042 -2.27225 -5.24191
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_23
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.5183 -2.29994 -4.39045
+        -24.892 -3.28872 -3.01833
+        -24.7985 -1.29091 -3.01083
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_23
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.5183 -2.29994 -4.39045
+        -24.7985 -1.29091 -3.01083
+        -23.0973 -1.36653 -4.05965
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_23
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.5183 -2.29994 -4.39045
+        -23.0973 -1.36653 -4.05965
+        -23.1907 -3.36433 -4.06715
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_23
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.5183 -2.29994 -4.39045
+        -23.1907 -3.36433 -4.06715
+        -24.892 -3.28872 -3.01833
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0092.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -25.3445 -2.50599 -3.69205
+        -25.1955 -0.512038 -3.64766
+        -23.4706 -0.618511 -4.65433
+        -23.6196 -2.61246 -4.69871
+        -25.3445 -2.50599 -3.69205
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -25.4088 -1.44898 -5.9008
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_24
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.9082 -1.50561 -5.037
+        -25.3445 -2.50599 -3.69205
+        -25.1955 -0.512038 -3.64766
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_24
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.9082 -1.50561 -5.037
+        -25.1955 -0.512038 -3.64766
+        -23.4706 -0.618511 -4.65433
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_24
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.9082 -1.50561 -5.037
+        -23.4706 -0.618511 -4.65433
+        -23.6196 -2.61246 -4.69871
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_24
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -24.9082 -1.50561 -5.037
+        -23.6196 -2.61246 -4.69871
+        -25.3445 -2.50599 -3.69205
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0096.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -25.737 -2.67453 -3.01157
+        -25.5946 -0.680048 -2.96955
+        -23.8819 -0.780717 -3.99745
+        -24.0243 -2.7752 -4.03947
+        -25.737 -2.67453 -3.01157
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -25.8324 -1.61843 -5.21963
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_25
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.3209 -1.67302 -4.36207
+        -25.737 -2.67453 -3.01157
+        -25.5946 -0.680048 -2.96955
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_25
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.3209 -1.67302 -4.36207
+        -25.5946 -0.680048 -2.96955
+        -23.8819 -0.780717 -3.99745
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_25
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.3209 -1.67302 -4.36207
+        -23.8819 -0.780717 -3.99745
+        -24.0243 -2.7752 -4.03947
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_25
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.3209 -1.67302 -4.36207
+        -24.0243 -2.7752 -4.03947
+        -25.737 -2.67453 -3.01157
+      }
+    }
+  }
+  Geode {
+    nodeMask 0xffffffff
+    cullingActive TRUE
+    StateSet {
+      DataVariance STATIC
+      rendering_hint DEFAULT_BIN
+      renderBinMode INHERIT
+      textureUnit 0 {
+        GL_TEXTURE_2D ON
+        Texture2D {
+          file "X:\\Group\\Haomin_Liu\\indoor_reconstruction\\0100.jpg"
+          wrap_s CLAMP
+          wrap_t CLAMP
+          wrap_r CLAMP
+          min_filter LINEAR_MIPMAP_LINEAR
+          mag_filter LINEAR
+          maxAnisotropy 1
+          borderColor 0 0 0 0
+          borderWidth 0
+          useHardwareMipMapGeneration TRUE
+          unRefImageDataAfterApply FALSE
+          internalFormatMode USE_IMAGE_DATA_FORMAT
+          resizeNonPowerOfTwo TRUE
+          shadowComparison FALSE
+          shadowCompareFunc GL_LEQUAL
+          shadowTextureMode GL_LUMINANCE
+        }
+      }
+    }
+    num_drawables 5
+    Geometry {
+      DataVariance STATIC
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays QUADS 0 4
+      }
+      VertexArray Vec3Array 5
+      {
+        -26.1132 -2.71109 -3.74302
+        -25.9738 -0.716073 -3.72172
+        -24.2568 -0.825231 -4.74152
+        -24.3962 -2.82025 -4.76282
+        -26.1132 -2.71109 -3.74302
+      }
+      NormalBinding OVERALL
+      NormalArray Vec3Array 1
+      {
+        -26.2011 -1.67876 -5.9626
+      }
+      TexCoordArray 0 Vec2Array 4
+      {
+        0 0
+        0 1
+        1 1
+        1 0
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        PolygonMode {
+          UniqueID PolygonMode_26
+          mode FRONT_AND_BACK LINE
+        }
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.693 -1.72346 -5.10243
+        -26.1132 -2.71109 -3.74302
+        -25.9738 -0.716073 -3.72172
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_26
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.693 -1.72346 -5.10243
+        -25.9738 -0.716073 -3.72172
+        -24.2568 -0.825231 -4.74152
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_26
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.693 -1.72346 -5.10243
+        -24.2568 -0.825231 -4.74152
+        -24.3962 -2.82025 -4.76282
+      }
+    }
+    Geometry {
+      DataVariance STATIC
+      StateSet {
+        DataVariance STATIC
+        rendering_hint DEFAULT_BIN
+        renderBinMode INHERIT
+        Use PolygonMode_26
+      }
+      useDisplayList TRUE
+      useVertexBufferObjects FALSE
+      PrimitiveSets 1
+      {
+        DrawArrays TRIANGLES 0 4
+      }
+      VertexArray Vec3Array 3
+      {
+        -25.693 -1.72346 -5.10243
+        -24.3962 -2.82025 -4.76282
+        -26.1132 -2.71109 -3.74302
+      }
+    }
+  }
+}
