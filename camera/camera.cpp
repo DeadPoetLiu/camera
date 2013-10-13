@@ -181,13 +181,56 @@ osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp){
 
 }
 
+osg::ref_ptr<osg::Node> getRec(double f, double xp, double yp,const std::string& img ){
+	osg::Vec3Array* rec=new osg::Vec3Array,*tri;
+	rec->push_back(osg::Vec3(-xp,-yp,f));
+	rec->push_back(osg::Vec3(-xp,yp,f));
+	rec->push_back(osg::Vec3(xp,yp,f));
+	rec->push_back(osg::Vec3(xp,-yp,f));
+	rec->push_back(osg::Vec3(-xp,-yp,f));
+	osg::Geometry *g=new osg::Geometry;
+	g->setVertexArray(rec);
+	g->addPrimitiveSet(new osg::DrawArrays(GL_QUADS,0,4));
+
+	osg::Geometry * tr[4];
+	osg::Geode *node=new osg::Geode;
+	node->addDrawable(g);
+	for(int i=0;i<4;i++){
+		tr[i]=new osg::Geometry;
+		tri=new osg::Vec3Array;
+		tri->push_back(osg::Vec3(0,0,0));
+		tri->push_back(rec->operator[](i));
+		tri->push_back(rec->operator[](i+1));
+		tr[i]->setVertexArray(tri);
+		tr[i]->addPrimitiveSet(new osg::DrawArrays(GL_TRIANGLES,0,4));
+		node->addDrawable(tr[i]);
+	}
+
+	osg::ref_ptr<osg::Vec2Array> texcoords = new osg::Vec2Array;
+texcoords->push_back( osg::Vec2(0.0f, 0.0f) );
+texcoords->push_back( osg::Vec2(0.0f, 1.0f) );
+texcoords->push_back( osg::Vec2(1.0f, 1.0f) );
+texcoords->push_back( osg::Vec2(1.0f, 0.0f) );
+ g->setTexCoordArray( 0, texcoords.get() );
+
+ osg::ref_ptr<osg::Texture2D> texture = new osg::Texture2D;
+osg::ref_ptr<osg::Image> image =
+osgDB::readImageFile( img );
+texture->setImage( image.get() );
+
+node->getOrCreateStateSet()->setTextureAttributeAndModes(
+0, texture.get() );
+	return node;
+
+}
 void main(){
 	std::ifstream in("C:\\Users\\w\\Documents\\indoor.act");
 	
 	osg::Group *root=new osg::Group;
 	double scale=1;
-	auto camera=getRec(4,2,1);
-	read(in,root,camera);
+	auto camera=getRec(4,2,1,"C:\\Users\\w\\Pictures\\a.PNG");
+	root->addChild(camera.get());
+	//read(in,root,camera);
 	
 //	osg::MatrixTransform *tr=new osg::MatrixTransform;
 //	tr->addChild(camera);
@@ -201,7 +244,7 @@ void main(){
 	std::cout<<root->getNumChildren();
 	auto stateset=root->getOrCreateStateSet();
 	osg::PolygonMode *pm = new osg::PolygonMode(osg::PolygonMode::FRONT_AND_BACK, osg::PolygonMode::LINE );
-	stateset->setAttributeAndModes( pm, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
+//	stateset->setAttributeAndModes( pm, osg::StateAttribute::ON | osg::StateAttribute::OVERRIDE);
 	viewer.run();
 //	system("pause");
 
