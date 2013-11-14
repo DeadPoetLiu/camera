@@ -387,7 +387,7 @@ node->getOrCreateStateSet()->setTextureAttributeAndModes(
 	return node;
 
 }
-void main(){
+void main(int argc, char *argv[]){
 	/*std::ifstream in("C:\\Users\\w\\Documents\\indoor.act");
 	
 	osg::Group *root=new osg::Group;
@@ -401,11 +401,14 @@ void main(){
 	
 	 
 //	root->addChild(tr);
+	std::string modelFile=argv[1];
+	std::string actFile=argv[2];
+
 	string fn="C:\\Users\\w\\Documents\\another.act";
 	std::string acts[]={"H:\\osgview\\OpenSceneGraph-Data-3.0.0\\acts\\enft.act","C:\\Users\\w\\Documents\\indoors.act","H:\\model\\00856\\test.act"};
 	std::string models[]={"H:\\osgview\\OpenSceneGraph-Data-3.0.0\\acts\\_model0.obj","H:\\osgview\\OpenSceneGraph-Data-3.0.0\\acts\\indoor\\indoor\\Model\\PMVS.obj","H:\\model\\00856\\Rec\\Model\\PMVS.obj"};
 	osg::Group *root=new osg::Group;
-	std::ifstream in(acts[2]);
+	std::ifstream in(actFile);
 	if(in)
 	   read(in,root,false);
 	else
@@ -427,7 +430,7 @@ void main(){
 //	osgDB::writeNodeFile(*root,"H:\\osgview\\OpenSceneGraph-Data-3.0.0\\camera.osg");
 	//root->addChild( osgDB::readNodeFile(models[1]) );
 ///	osgDB::ReaderWriter::Options.setOptionString("
-	osg::Node * model=osgDB::readNodeFile(models[2],new osgDB::Options("noRotation"));
+	osg::Node * model=osgDB::readNodeFile(modelFile,new osgDB::Options("noRotation"));
 	
 	root->addChild(model);
 	viewer.setUpViewInWindow(400, 400, 640, 480); 
