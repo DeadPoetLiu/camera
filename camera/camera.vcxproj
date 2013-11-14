@@ -137,6 +137,12 @@
   <ItemGroup>
     <ClCompile Include="camera.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Act.h" />
+    <ClInclude Include="headers.h" />
+    <ClInclude Include="stringProcess.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
